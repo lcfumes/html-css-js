@@ -3,11 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Validação de CPF</title>
+
+    <!-- Conecta o arquivo de estilos da página -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World</h1>
+    <!-- Container principal da página -->
+    <main class="container">
+        <h1>Validação de CPF</h1>
+
+        <!-- Rótulo do campo de CPF -->
+        <label for="cpfInput">Digite o CPF</label>
+
+        <!-- Campo de entrada para o CPF -->
+        <input
+            id="cpfInput"
+            type="text"
+            maxlength="14"
+            placeholder="000.000.000-00"
+            autocomplete="off"
+        >
+
+        <!-- Botão para acionar a validação -->
+        <button id="validarBtn" type="button">Validar CPF</button>
+
+        <!-- Área para mostrar o resultado da validação -->
+        <p id="resultado" class="resultado" aria-live="polite"></p>
+    </main>
+
+    <!-- Conecta o arquivo JavaScript da página -->
     <script src="script.js"></script>
 </body>
 </html>
