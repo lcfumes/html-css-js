@@ -1,0 +1,90 @@
+/*
+    Estilos gerais da página de validação de CPF.
+    Centraliza o conteúdo e deixa a interface visualmente limpa.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f0f4ff, #dfe9ff);
+    color: #1f2937;
+}
+
+/* Container principal do formulário */
+.container {
+    width: min(90vw, 420px);
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 28px 24px;
+    box-shadow: 0 12px 30px rgba(31, 41, 55, 0.15);
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+/* Estilo do campo de entrada */
+input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+input:focus {
+    border-color: #4f46e5;
+}
+
+/* Estilo do botão de validação */
+button {
+    margin-top: 16px;
+    width: 100%;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 10px;
+    background: #4f46e5;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+button:hover {
+    opacity: 0.95;
+}
+
+/* Área de mensagem de resultado */
+.resultado {
+    min-height: 24px;
+    margin-top: 18px;
+    font-weight: 600;
+}
+
+.resultado.success {
+    color: #15803d;
+}
+
+.resultado.error {
+    color: #b91c1c;
+}
